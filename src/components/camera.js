@@ -15,8 +15,8 @@ class TakePhoto extends Component {
     // var data={
     //   requests: [
     //     {
-          image: {
-              content: dataUri.slice(23),
+          // image: {
+          //     content: dataUri.slice(23),
           },
           features: [{
             type: "TEXT_DETECTION",
