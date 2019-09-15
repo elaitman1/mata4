@@ -26,11 +26,11 @@ class TakePhoto extends Component {
     //   ]
     // }
 
-    await axios({
-        method: 'post',
-        url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDbXhEc-ohKbIv4J8J8drPfAnNZ1Q8cEOk',
-        data
-      })
+    // await axios({
+    //     method: 'post',
+    //     url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDbXhEc-ohKbIv4J8J8drPfAnNZ1Q8cEOk',
+    //     data
+    //   })
 
       .then(r => {
         let array = r.data.responses[0].textAnnotations
