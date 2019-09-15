@@ -12,9 +12,9 @@ class TakePhoto extends Component {
     //   imgCompression: .5,
     // };
 
-    var data={
-      requests: [
-        {
+    // var data={
+    //   requests: [
+    //     {
           image: {
               content: dataUri.slice(23),
           },
