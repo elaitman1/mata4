@@ -21,10 +21,10 @@ class TakePhoto extends Component {
           // features: [{
           //   type: "TEXT_DETECTION",
           //   maxResults: 5
-          }]
-        }
-      ]
-    }
+    //       }]
+    //     }
+    //   ]
+    // }
 
     await axios({
         method: 'post',
