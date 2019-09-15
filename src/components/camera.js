@@ -7,10 +7,10 @@ class TakePhoto extends Component {
 
   onTakePhoto = async(dataUri) => {
 
-    const config = {
-      sizeFactor: 1,
-      imgCompression: .5,
-    };
+    // const config = {
+    //   sizeFactor: 1,
+    //   imgCompression: .5,
+    // };
 
     var data={
       requests: [
