@@ -17,10 +17,10 @@ class TakePhoto extends Component {
     //     {
           // image: {
           //     content: dataUri.slice(23),
-          },
-          features: [{
-            type: "TEXT_DETECTION",
-            maxResults: 5
+          // },
+          // features: [{
+          //   type: "TEXT_DETECTION",
+          //   maxResults: 5
           }]
         }
       ]
