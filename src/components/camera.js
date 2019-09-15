@@ -7,30 +7,30 @@ class TakePhoto extends Component {
 
   onTakePhoto = async(dataUri) => {
 
-    // const config = {
-    //   sizeFactor: 1,
-    //   imgCompression: .5,
-    // };
+    const config = {
+      sizeFactor: 1,
+      imgCompression: .5,
+    };
 
-    // var data={
-    //   requests: [
-    //     {
-          // image: {
-          //     content: dataUri.slice(23),
-          // },
-          // features: [{
-          //   type: "TEXT_DETECTION",
-          //   maxResults: 5
-    //       }]
-    //     }
-    //   ]
-    // }
+    var data={
+      requests: [
+        {
+          image: {
+              content: dataUri.slice(23),
+          },
+          features: [{
+            type: "TEXT_DETECTION",
+            maxResults: 5
+          }]
+        }
+      ]
+    }
 
-    // await axios({
-    //     method: 'post',
-    //     url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDbXhEc-ohKbIv4J8J8drPfAnNZ1Q8cEOk',
-    //     data
-    //   })
+    await axios({
+        method: 'post',
+        url: 'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDbXhEc-ohKbIv4J8J8drPfAnNZ1Q8cEOk',
+        data
+      })
 
       .then(r => {
         let array = r.data.responses[0].textAnnotations
